@@ -1,0 +1,87 @@
+@media (max-width: 768px) {
+    .logo {
+        margin-left: -10px;
+    }
+
+    .navbar a {
+        display: flex;
+        flex-direction: column;
+        margin: 0.5rem 0;
+        font-size: 1rem;
+    }
+
+    .icon img {
+        right: 120px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .home-container {
+        display: none;
+    }
+
+    .esconder{
+        background: url(../img/homenagem.jpeg);
+        display: flex;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding-top:10px;
+        width: 50%;
+        height: 70vh;
+        margin: 148px 0 0 10px;
+    }
+
+    .content h3 {
+        display: none;
+    }
+
+    .content p {
+        display: none;
+    }
+
+}
+
+@media (max-width: 480px) {
+    .esconder{
+        background: url(../img/homenagem.jpeg);
+        display: flex;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding-top:15px;
+        width: 50%;
+        height: 55vh;
+        margin: 148px 0 0 10px;
+
+    }
+}
+
+@media (max-width: 393px) {
+    .esconder{
+        background: url(../img/homenagem.jpeg);
+        display: flex;
+        background-size: cover;
+        background-position: center; 
+        background-repeat: no-repeat;
+        padding-top:15px;
+        width: 50%;
+        height: 55vh;
+        margin: 148px 65px 0 60px;
+
+    }
+
+
+    .persona .box-container .box img {
+        height: 19rem;
+    }
+
+    .review .box-container .box img {
+        margin-left: -15px;
+    }
+
+
+}

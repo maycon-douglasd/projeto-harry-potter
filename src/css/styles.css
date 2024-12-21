@@ -1,0 +1,276 @@
+body{
+    background-color: black;
+}
+
+.logo {
+    width: 70px;
+    border-radius: 80%;
+    margin: 20px;
+}
+
+section {
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.header {
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+    position: fixed;
+    background-color: black;
+    z-index: 20;
+      
+}
+
+.header section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.5rem;
+    padding-bottom: 0.3rem;   
+    
+}
+
+.navbar a{
+    margin: 0 1rem;
+    font-size: 900;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    color:#00FF7F;
+    border-bottom: 0.1rem solid #00FF7F;
+    padding-bottom: 0.5rem;
+    font-size: 20px;
+    opacity: 0.8;
+
+}
+
+.icon img {
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.icon img:hover{
+    width: 40px;
+    height: 40px;
+}
+
+.home-container {
+    position: relative;
+    background: url("../img/97933bd446183f0dfa37f1384aee7981.gif") no-repeat center center;
+    height: 820px; 
+    width: 900px; 
+    background-size: contain; 
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 15px;
+    z-index: 1;
+}
+
+.home-container section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+    z-index: 2;
+    position: relative;
+}
+
+.esconder {
+    display: none;
+}
+
+.content {
+    max-width: 800px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    
+}
+
+.content h3 {
+    color: #ffff;
+    font-size: 2.5rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.content p {
+    color: #19d551;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.6;
+    padding: 0.5rem 0;
+}
+
+.title {
+    font-size: 2rem;
+    color: #ffffff;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    
+}
+
+.box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 3.0rem;
+    margin-bottom: 80px;
+}
+
+.persona .box-container .box {
+    text-align: center;
+    border: 1px solid #00FF7F;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.persona .box-container .box img {
+    height: 20rem;
+}
+
+.persona .box-container .box h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem 0;  
+    
+
+}
+
+.persona .box-container .box:hover {
+    background-color: #fffffff8;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+
+.persona .box-container .box:hover>* {
+    color: var(--black);
+
+}
+
+.box-container1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 3.0rem;
+}
+
+.box-1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    padding: 30px;
+}
+
+.box-1 img {
+    width: 350px;
+}
+
+.house .box-container1 .box1 {
+    text-align: center;
+    border: 1px solid #00FF7F;
+    padding: 0.5rem;
+    cursor: pointer;    
+
+}
+
+.house .box-container1 .box1 img {
+    height: 20rem;
+    
+}
+
+.house .box-container1 .box1 h3 {
+    color: #ffffff;
+    font-size: 2rem;
+    padding: 1rem 0;
+
+}
+
+.house .box-container1 .box1:hover {
+    background-color: #fffffff8;
+    opacity: 0.8;
+    transition: 0.9s;
+}
+
+
+.house .box-container1 .box1:hover>* {
+    color: var(--black);
+
+}
+
+.review .box-container .box {
+    border: var(--border);
+    text-align: center;
+    padding: 3rem 2rem;
+}
+
+.review .box-container .box img {
+    width: 300px;
+    cursor: pointer;
+}
+
+.review .box-container .box img:hover {
+    transition: 350ms linear;
+    transform: scale(1.1);
+}
+
+.review .box-container .box p {
+    font-size: 1.5rem;
+    color: #ffff;
+    padding: 2rem 0;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box h3 {
+    color: #ffff;
+    font-size: 2rem;
+    margin: 1rem;
+}
+
+
+.review .box-container .box .user {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    color: #000000;
+    padding: 30px;
+    background-color: #f6cd2be7;
+
+
+}
+
+.corvinal{
+    color: #052963d6;
+}
+
+.grifinoria{
+    color: #580a18;
+}
+
